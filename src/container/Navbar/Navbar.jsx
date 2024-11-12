@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from '../../img/image.png';
 import { FaPhone } from 'react-icons/fa';
 import { HiMenu, HiX } from 'react-icons/hi';
-import './Navbar.css';
+import './Navbar.scss';
 
 const Navbar = () => {
 
@@ -27,33 +27,33 @@ const Navbar = () => {
   }, [lastScrollTop]);
 
   const handleOpenMenu = () => {
-    document.getElementsByClassName('menu-container')[0].style.marginRight = 0;
-    document.getElementsByClassName('menu-container')[0].style.opacity = 1;
+    document.getElementsByClassName('app__navbar-menu-container')[0].style.marginRight = 0;
+    document.getElementsByClassName('app__navbar-menu-container')[0].style.opacity = 1;
   }
 
   const handleCloseMenu = () => {
-    document.getElementsByClassName('menu-container')[0].style.marginRight = '-300px';
-    document.getElementsByClassName('menu-container')[0].style.opacity = 0;
+    document.getElementsByClassName('app__navbar-menu-container')[0].style.marginRight = '-300px';
+    document.getElementsByClassName('app__navbar-menu-container')[0].style.opacity = 0;
   }
 
   return (
-    <nav className={showNavbar ? 'show' : 'hide'}>
-      <a href="./" className='logo'>
+    <nav className='app__navbar'>
+      <a href="./" className='app__navbar-logo'>
         <img src={logo} alt='logo' />
       </a>
       
-      <ul className='desktop-menu'>
-        <li><a href='#home'>Home</a></li>
-        <li><a href='#about'>About Us</a></li>
-        <li><a href='#services'>Services</a></li>
-        <li className='contact-link'><a href="#contact">Contact Us</a><FaPhone className='phone-icon' /></li>
+      <ul className='app__navbar-links'>
+        <li className='app__flex p-text'><a href='#home'>Home</a><div /></li>
+        <li className='app__flex p-text'><a href='#about'>About Us</a><div /></li>
+        <li className='app__flex p-text'><a href='#services'>Services</a><div /></li>
+        <li className='contact-link app__flex p-text'><a href="#contact">Contact Us</a><FaPhone className='phone-icon' /></li>
       </ul>
 
-      <div className='mobile-menu'>
-          <HiMenu className='open-link' onClick={handleOpenMenu} />
+      <div className='app__navbar-menu'>
+          <HiMenu onClick={handleOpenMenu} />
 
-          <div className='menu-container'>
-              <HiX className='close-link' onClick={handleCloseMenu} />
+          <div className='app__navbar-menu-container'>
+              <HiX onClick={handleCloseMenu} />
               <ul>
                 <li><a href="#home" onClick={handleCloseMenu}>Home</a></li>
                 <li><a href="#about" onClick={handleCloseMenu}>About Us</a></li>
