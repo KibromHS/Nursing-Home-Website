@@ -31,7 +31,8 @@ const About = () => {
 
       <div className='second-about'>
         <div className='about-left'>
-          <img src={oldPerson} alt="care" />
+          <img src={aboutBg} alt="bg" className='bg' />
+          <img src={oldPerson} alt="care" className='old-image' />
         </div>
         <div className='about-right'>
           <h3>We take great care</h3>

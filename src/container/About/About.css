@@ -63,15 +63,23 @@
     width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .second-about .about-left {
     width: 30%;
+    position: relative;
 }
 
-.about-left img {
+.about-left .old-image {
     width: 100%;
+}
+
+.about-left .bg {
+    position: absolute;
+    top: -10%;
+    left: -15%;
+    z-index: -1;
 }
 
 .about-right {
