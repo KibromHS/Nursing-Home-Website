@@ -10,7 +10,7 @@
     // -webkit-backdrop-filter: blur(4px);
     // border: 1px solid rgba(255, 255, 255, 0.18);
     position: fixed;
-    z-index: 2;
+    z-index: 4;
 }
 
 .app__navbar-logo {
@@ -184,6 +184,8 @@
     border-radius: 40px;
     padding: 2px 2px 2px 16px;
     flex-direction: row !important;
+    display: flex;
+    align-items: center;
     
 
     &:hover {
@@ -207,6 +209,5 @@
     margin-left: 10px;
     color: white;
     cursor: pointer;
-
     
 }

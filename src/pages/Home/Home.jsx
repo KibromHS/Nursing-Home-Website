@@ -1,11 +1,12 @@
 import React from 'react'
-import { Main, Navbar } from '../../container'
+import { About, Main, Navbar } from '../../container'
 
 const Home = () => {
   return (
     <>
         <Navbar />
         <Main />
+        <About />
     </>
   )
 }

@@ -5,3 +5,5 @@ export { default as illustration } from './about.png';
 export { default as nurses } from './header-img.png';
 export { default as dashed } from './dashed.png';
 export { default as dotted } from './dotted.png';
+export { default as aboutBg } from './about-bg.png';
+export { default as oldPerson } from './about-customer.png';
