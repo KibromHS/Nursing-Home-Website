@@ -1,156 +1,155 @@
 .contact {
-    background-color: #DDD;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  /* background-color: #DDD; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media screen and (max-width: 990px) {
-    .contact {
-        flex-direction: column;
-        justify-content: center;
-        min-height: 160vh;
-    }
+  .contact {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 160vh;
+  }
 
-    .contact .left-side {
-        padding: 2rem;
-    }
+  .contact .left-side {
+    padding: 2rem;
+  }
 }
 
 .contact .left-side {
-    padding: 4rem;
-    
+  padding: 4rem;
 }
 
 .contact .left-side h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .contact .left-side div {
-    height: 5px;
-    width: 7rem;
-    background-color: var(--green-nav);
+  height: 5px;
+  width: 7rem;
+  background-color: var(--green-nav);
 }
 
 .contact .left-side ul {
-    margin: 2rem 0;
-    list-style-type: none;
+  margin: 2rem 0;
+  list-style-type: none;
 }
-
 
 .contact .left-side ul li {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
-
 .contact .left-side ul li a {
-    color: black;
-    text-decoration: none;
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
+  color: black;
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
 }
 
 .contact .left-side ul li a svg {
-    margin-right: 8px;
+  margin-right: 8px;
 }
 
 .contact .right-side {
-    padding: 4rem;
-    text-align: left;
-    width: 50%;
+  padding: 4rem;
+  text-align: left;
+  width: 50%;
 }
 
-
 .contact .right-side h3 {
-    font-size: 2rem;
-    font-weight: 400;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .contact .right-side form div {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
-
 
 .name-email {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
-.name-email input[type=email] {
-    margin-left: 2rem;
+.name-email input[type="email"] {
+  margin-left: 2rem;
 }
 
-input, textarea {
-    padding: 1rem 3rem;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    resize: vertical;
-    width: 100%;
+input,
+textarea {
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #ddd;
+  /* border: 1px solid black; */
+  outline: none;
+  font-size: 1.1rem;
+  resize: vertical;
+  width: 100%;
 }
 
-input[type=submit] {
-    cursor: pointer;
-    background-color: var(--secondary-green);
-    color: white;
+input[type="submit"] {
+  cursor: pointer;
+  background-color: var(--secondary-green);
+  color: white;
 }
 
-input[type=submit]:hover {
-    background-color: var(--green-nav);
+input[type="submit"]:hover {
+  background-color: var(--green-nav);
 }
 
 .left-side iframe {
-    width: 600px;
+  width: 600px;
 }
 
 @media screen and (max-width: 990px) {
-    .contact .left-side {
-        width: 100%;
-        padding: 0;
-    }
+  .contact .left-side {
+    width: 100%;
+    padding: 0;
+  }
 
-    .contact .right-side {
-        width: 100%;
-        text-align: center;
-        padding: 1rem;
-    }
+  .contact .right-side {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
 
-    .contact .left-side iframe {
-        width: 100%;
-    }
+  .contact .left-side iframe {
+    width: 100%;
+  }
 
-    .contact .left-side ul {
-        margin: 2rem;
-    }
+  .contact .left-side ul {
+    margin: 2rem;
+  }
 
-    .contact .left-side div {
-        margin: auto;
-    }
+  .contact .left-side div {
+    margin: auto;
+  }
 
-    .contact .right-side h3 {
-        font-size: 1.5rem;
-        margin-top: 3rem;
-    }
+  .contact .right-side h3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
 
-    .name-email input[type=email] {
-        margin-left: 0.7rem;
-    }
+  .name-email input[type="email"] {
+    margin-left: 0.7rem;
+  }
 
-    input, textarea {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
+  input,
+  textarea {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
 
-    .contact .right-side form div {
-        margin: 1.1rem 0;
-    }
+  .contact .right-side form div {
+    margin: 1.1rem 0;
+  }
 
-    .contact .left-side h1 {
-        margin: auto;
-    }
+  .contact .left-side h1 {
+    margin: auto;
+  }
 }

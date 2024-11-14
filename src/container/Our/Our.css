@@ -1,70 +1,70 @@
 .our-homes {
-    width: 100%;
-    margin-top: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #DDDDDD30;
-    padding: 7rem 0;
+  width: 100%;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #DDDDDD30; */
+  background-color: #ddd;
+  padding: 7rem 0;
 }
 
 .our-homes h3 {
-    font-size: 1.1rem;
-    margin: 1.2rem 0;
+  font-size: 1.1rem;
+  margin: 1.2rem 0;
 }
 
 @media screen and (max-width: 750px) {
-    .our-homes h1 {
-        font-size: 2.2rem;
-    }
+  .our-homes h1 {
+    font-size: 2.2rem;
+  }
 }
 
 .features {
-    list-style: none;
+  list-style: none;
 }
 
 @keyframes mytabs {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .tabs {
-    display: flex;
-    width: 40%;
-    justify-content: space-evenly;
-    
+  display: flex;
+  width: 40%;
+  justify-content: space-evenly;
 }
 
 .tab {
-    width: 50%;
-    cursor: pointer;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    animation: mytabs;
+  width: 50%;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  animation: mytabs;
 }
 
 @media screen and (max-width: 750px) {
-    .tabs {
-        width: 90%;
-    }
+  .tabs {
+    width: 90%;
+  }
 }
 
 .tab p {
-    text-align: center;
-    font-size: 1.1rem;
-    font-weight: bolder;
-    margin-bottom: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  margin-bottom: 15px;
 }
 
 .tab div {
-    height: 8px;
-    width: 100%;
-    border: 1px solid black;
+  height: 8px;
+  width: 100%;
+  border: 1px solid black;
 }
 
 /* .tab:nth-of-type(1) > div {
@@ -72,63 +72,63 @@
 } */
 
 .tab.active div {
-    background-color: var(--blue-black);
+  background-color: var(--blue-black);
 }
 
 .cities {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
-    padding: 0;
-    margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.2);
+  padding: 0;
+  margin: 0;
 }
 
 .tab-content {
-    background-color: var(--blue-white);
-    padding: 4rem 6rem;
-    animation: mytabs;
-    transition: all 0.1s ease;
+  background-color: var(--blue-white);
+  padding: 4rem 6rem;
+  animation: mytabs;
+  transition: all 0.1s ease;
 }
 
 @media screen and (max-width: 750px) {
-    .cities {
-        flex-direction: column;
-        width: 90%;
-    }
+  .cities {
+    flex-direction: column;
+    width: 90%;
+  }
 
-    .tab-content {
-        padding: 2rem 1rem;
-    }
+  .tab-content {
+    padding: 2rem 1rem;
+  }
 }
 
 .tab-content.active {
-    background-color: var(--blue-black);
-    color: white;
+  background-color: var(--blue-black);
+  color: white;
 }
 
 .tab-content h1 {
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .tab-content h2 {
-    font-size: 1rem;
-    font-weight: bolder;
-    margin-top: 2.5rem;
-    margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bolder;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
 }
 
 .tab-content p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .tab-content .both {
-    text-align: right;
+  text-align: right;
 }
 
 .tab-content ul li {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
