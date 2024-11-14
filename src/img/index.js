@@ -9,3 +9,4 @@ export { default as aboutBg } from './about-bg.png';
 export { default as oldPerson } from './about-customer.png';
 export { default as chooseUs } from './choose-us.png';
 export { default as chooseUsBg } from './choose-us-bg.png';
+export { default as footerBg } from './footer-bg.png';
