@@ -4,17 +4,34 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#44DD44" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="At Saint Gabriel Adult Family Home, we provide exceptional care in a nurturing, family-like environment. Our dedicated RN-certified staff ensures personalized attention and support for eachresident, helping them maintain dignity, independence, and quality of life."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <title>React App</title>
+    <title>St. Gabriel Nursing Home</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', initTabs);
+
+      function initTabs() {
+          const tabs = document.querySelectorAll('.tab');
+          const contents = document.querySelectorAll('.tab-content');
+          tabs.forEach(function(tab) {
+              tab.addEventListener('click', function() {
+                  const content = document.getElementById(this.dataset.tab);
+                  tabs.forEach(tab => tab.classList.remove('active'));
+                  contents.forEach(content => content.classList.remove('active'));
+                  content.classList.add('active');
+                  this.classList.add('active');
+              });
+          });
+      }
+    </script>
   </body>
 </html>

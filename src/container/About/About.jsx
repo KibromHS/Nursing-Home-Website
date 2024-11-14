@@ -1,6 +1,7 @@
 import React from 'react'
 import { care, certified, guarantee, oldPerson, aboutBg } from '../../img';
 import './About.css';
+import { HiChevronRight } from 'react-icons/hi';
 
 const About = () => {
   return (
@@ -35,8 +36,14 @@ const About = () => {
           <img src={oldPerson} alt="care" className='old-image' />
         </div>
         <div className='about-right'>
-          <h3>We take great care</h3>
+          <h3>We Take Great Care</h3>
           <p>At Saint Gabriel Adult Family Home, we provide exceptional care in a nurturing, family-like environment. Our dedicated RN-certified staff ensures personalized attention and support for eachresident, helping them maintain dignity, independence, and quality of life.  </p>
+          <ul>
+            <li><HiChevronRight /> Personalized Care</li>
+            <li><HiChevronRight /> Medication Management</li>
+            <li><HiChevronRight /> Social and Recreational Activities</li>
+            <li><HiChevronRight /> Assistance with Activities of Daily Living</li>
+          </ul>
           <a href="#about" className='more-link'>About Us</a>
         </div>
       </div>
