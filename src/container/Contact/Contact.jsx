@@ -13,28 +13,26 @@ const Contact = () => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
     try {
-      // const response = await fetch(
-      //   "https://saintgabrielnursinghome.com/send-email",
-      //   {
-      //     method: "POST",
-      //     headers: {
-      //       "Content-Type": "application/json",
-      //     },
-      //     body: JSON.stringify({ name, email, subject, message }),
-      //   }
-      // );
+      const response = await fetch(
+        "https://saintgabrielnursinghome.com/send-email",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ name, email, subject, message }),
+        }
+      );
 
-      const response = await fetch("http://localhost:5000/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ name, email, subject, message }),
-      });
+      // const response = await fetch("http://localhost:5000/send-email", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({ name, email, subject, message }),
+      // });
 
       const text = await response.text();
-      console.log("Raw response:", text);
-
       const data = text ? JSON.parse(text) : {};
       if (response.ok) {
         toast("Email sent successfully");

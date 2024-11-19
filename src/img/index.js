@@ -20,3 +20,5 @@ export { default as quote } from "./quote.png";
 export { default as profile1 } from "./profile1.png";
 export { default as aboutus1 } from "./aboutus1.png";
 export { default as aboutus2 } from "./aboutus2.png";
+export { default as illustration1 } from "./illustration1.png";
+export { default as illustration2 } from "./illustration2.png";

@@ -4,16 +4,11 @@ import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: "100%" }}
-    >
+    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}>
       <Main />
       <About />
       <Our />
       <Testimonial />
-      <Contact />
     </motion.div>
   );
 };

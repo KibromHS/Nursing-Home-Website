@@ -83,9 +83,9 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="mailto:info@stgabrieladultcare.com">
+              <a href="mailto:info@saintgabrielnursinghome.com">
                 <FaMailBulk />
-                info@stgabrieladultcare.com
+                info@saintgabrielnursinghome.com
               </a>
             </li>
             <li>

@@ -1,0 +1,141 @@
+.services {
+  padding-top: 80px;
+}
+
+.header-img {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 30vh;
+}
+
+.header-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.header-img h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #bcffe3;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.header-img h1 span {
+  /* color: white; */
+  background: linear-gradient(to right, #03331f 53%, #08995d 100%);
+  padding-left: 2rem;
+}
+
+.first-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.first-service h2 {
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.first-service p {
+  width: 50%;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.second-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-service .left {
+  padding: 3rem;
+  padding-left: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.third-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.third-service .right {
+  padding: 3rem;
+  padding-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.services h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.services h3 svg {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.services p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  margin-left: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .first-service h2 {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .first-service p {
+    margin-left: 0;
+  }
+  .first-service p {
+    width: 90%;
+  }
+  .second-service {
+    flex-direction: column;
+  }
+
+  .third-service {
+    flex-direction: column;
+  }
+
+  .second-service img {
+    width: 100%;
+  }
+
+  .third-service img {
+    width: 100%;
+  }
+
+  .second-service .left {
+    padding: 1rem;
+  }
+
+  .third-service .right {
+    padding: 1rem;
+  }
+}

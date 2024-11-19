@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { AnimatedRoutes, Footer, Navbar } from "./container";
+import { BrowserRouter } from "react-router-dom";
+import { AnimatedRoutes, Contact, Footer, Navbar } from "./container";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -10,6 +10,7 @@ root.render(
     <BrowserRouter>
       <Navbar />
       <AnimatedRoutes />
+      <Contact />
       <Footer />
     </BrowserRouter>
   </React.StrictMode>

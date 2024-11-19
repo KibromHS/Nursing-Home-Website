@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     min-height: 160vh;
+    margin-top: 9rem;
   }
 
   .contact .left-side {
