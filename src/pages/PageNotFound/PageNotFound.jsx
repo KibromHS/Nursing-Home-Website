@@ -1,13 +1,12 @@
-import React from 'react'
-import { Navbar } from '../../container'
+import React from "react";
+import "./PageNotFound.css";
 
 const PageNotFound = () => {
   return (
-    <>
-        <Navbar />
-        404 : Page Not Found
-    </>
-  )
-}
+    <div className="page-not-found">
+      <h1>404 : Page Not Found</h1>
+    </div>
+  );
+};
 
-export default PageNotFound
+export default PageNotFound;

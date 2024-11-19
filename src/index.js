@@ -1,17 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { PageNotFound, Home } from './pages';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { AnimatedRoutes, Footer, Navbar } from "./container";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='*' element={<PageNotFound/>} />
-      </Routes>
+      <Navbar />
+      <AnimatedRoutes />
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -9,6 +9,9 @@ app.use(cors({
     origin: 'https://saintgabrielnursinghome.com'
 }));
 
+app.use(express.urlencoded({extended: true}));
+app.use(express.json());
+
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {

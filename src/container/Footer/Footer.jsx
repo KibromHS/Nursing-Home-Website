@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -46,22 +47,22 @@ const Footer = () => {
           <img src={underline} alt="" />
           <ul>
             <li>
-              <a href="#home">
+              <Link to="/">
                 <FaChevronRight />
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#about">
+              <Link to="/about">
                 <FaChevronRight />
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#services">
+              <Link to="our-services">
                 <FaChevronRight />
                 Services
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#contact">

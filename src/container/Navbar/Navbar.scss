@@ -1,213 +1,211 @@
 .app__navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: white;
-    // background: rgba(255, 255, 255, 0.25);
-    // backdrop-filter: blur(4px);
-    // -webkit-backdrop-filter: blur(4px);
-    // border: 1px solid rgba(255, 255, 255, 0.18);
-    position: fixed;
-    z-index: 4;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: white;
+  // background: rgba(255, 255, 255, 0.25);
+  // backdrop-filter: blur(4px);
+  // -webkit-backdrop-filter: blur(4px);
+  // border: 1px solid rgba(255, 255, 255, 0.18);
+  position: fixed;
+  z-index: 4;
 }
 
 .app__navbar-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 
-    img {
-        width: 140px;
-        height: 60px;
-    }
+  img {
+    width: 140px;
+    height: 60px;
+  }
 }
 
 .app__navbar-links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
 
-    li {
-        margin: 0 1rem;
-        flex-direction: column;
-
-        div {
-            width: 100%;
-            height: 5px;
-            background-color: var(--secondary-green);
-            width: 0;
-            height: 0;
-            border-radius: 10px;
-            margin-top: 5px;
-            transition: all 0.3s ease;
-        }
-    
-        a {
-            text-decoration: none;
-            color: var(--gray-color);
-            text-transform: uppercase;
-            font-weight: 500;
-            transition: all 0.3s ease-in-out;
-            flex-direction: column;
-    
-            &:hover {
-                color: var(--green-nav);
-            }
-        }
-
-        &:hover {
-            div {
-                width: 100%;
-                height: 5px;
-            }
-        }
-    }
-
-    @media screen and (max-width: 750px) {
-        display: none;
-    }
-}
-
-.app__navbar-menu {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--green-nav);
-    cursor: pointer;
-    
-    svg {
-        width: 70%;
-        height: 70%;
-        color: white;
-    }
+  li {
+    margin: 0 1rem;
+    flex-direction: column;
 
     div {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        margin-right: -300px;
-        opacity: 0;
-        outline: none;
-        padding: 1rem;
-        z-index: 5;
-        width: 70%;
-        height: 100vh;
-        transition: all 0.6s ease-in-out;
-
-        display: flex;
-        justify-content: flex-end;
-        align-items: flex-end;
-        flex-direction: column;
-
-        background-color: white;
-        background-image: url(../../img/bgWhite.png);
-        background-size: cover;
-        background-repeat: repeat;
-
-        box-shadow: 0 0 20px rgba(168, 168, 168, 0.2);
-
-        svg {
-            width: 35px;
-            height: 35px;
-            color: var(--green-nav);
-            margin: 0.5rem 1rem;
-        }
-
-        ul {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            flex-direction: column;
-            list-style-type: none;
-
-            li {
-                margin: 1rem;
-
-                a {
-                    text-decoration: none;
-                    color: var(--gray-color);
-                    text-transform: uppercase;
-                    font-size: 1rem;
-                    font-weight: 500;
-                    transition: all 0.3s ease-in-out;
-
-                    &:hover {
-                        color: var(--green-nav);
-                    }
-                }
-            }
-        }
-
-        @media screen and (max-width: 395px) {
-            width: 80%;
-        }
-        @media screen and (max-width: 200px) {
-            width: 90%;
-        }
-    }
-
-    @media screen and (min-width: 750px) {
-        display: none;
-    }
-}
-
-.app__flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.p-text {
-    font-size: 0.8rem;
-    text-align: left;
-    color: var(--gray-color);
-    line-height: 1.5;
-  
-    @media screen and (min-width: 2000px) {
-      font-size: 1.75rem;
-    }
-}
-
-.contact-link {
-    background: linear-gradient(to right, #128656FF 0%, #62D6A6FF 100%);
-    border-radius: 40px;
-    padding: 2px 2px 2px 16px;
-    flex-direction: row !important;
-    display: flex;
-    align-items: center;
-    
-
-    &:hover {
-        background: #027646;
-        .phone-icon {
-            background-color: #027646;
-        }
+      width: 100%;
+      height: 5px;
+      background-color: var(--secondary-green);
+      width: 0;
+      height: 0;
+      border-radius: 10px;
+      margin-top: 5px;
+      transition: all 0.3s ease;
     }
 
     a {
-        color: white !important;
-        font-weight: 700;
+      text-decoration: none;
+      color: var(--gray-color);
+      text-transform: uppercase;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+      flex-direction: column;
+
+      &:hover {
+        color: var(--green-nav);
+      }
     }
+
+    &:hover {
+      div {
+        width: 100%;
+        height: 5px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
+}
+
+.app__navbar-menu {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--green-nav);
+  cursor: pointer;
+
+  svg {
+    width: 70%;
+    height: 70%;
+    color: white;
+  }
+
+  div {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin-right: -500px;
+    opacity: 0;
+    outline: none;
+    padding: 1rem;
+    z-index: 5;
+    width: 70%;
+    height: 100vh;
+    transition: all 0.6s ease-in-out;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+
+    background-color: white;
+    background-image: url(../../img/bgWhite.png);
+    background-size: cover;
+    background-repeat: repeat;
+
+    box-shadow: 0 0 20px rgba(168, 168, 168, 0.2);
+
+    svg {
+      width: 35px;
+      height: 35px;
+      color: var(--green-nav);
+      margin: 0.5rem 1rem;
+    }
+
+    ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      flex-direction: column;
+      list-style-type: none;
+
+      li {
+        margin: 1rem;
+
+        a {
+          text-decoration: none;
+          color: var(--gray-color);
+          text-transform: uppercase;
+          font-size: 1rem;
+          font-weight: 500;
+          transition: all 0.3s ease-in-out;
+
+          &:hover {
+            color: var(--green-nav);
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 395px) {
+      width: 80%;
+    }
+    @media screen and (max-width: 200px) {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray-color);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.contact-link {
+  background: linear-gradient(to right, #128656ff 0%, #62d6a6ff 100%);
+  border-radius: 40px;
+  padding: 2px 2px 2px 16px;
+  flex-direction: row !important;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    background: #027646;
+    .phone-icon {
+      background-color: #027646;
+    }
+  }
+
+  a {
+    color: white !important;
+    font-weight: 700;
+  }
 }
 
 .phone-icon {
-    background-color: #62D6C6;
-    border-radius: 50%;
-    padding: 7px;
-    font-size: 35px;
-    margin-left: 10px;
-    color: white;
-    cursor: pointer;
-    
+  background-color: #62d6c6;
+  border-radius: 50%;
+  padding: 7px;
+  font-size: 35px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
 }

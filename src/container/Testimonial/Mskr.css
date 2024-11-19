@@ -1,0 +1,54 @@
+.mskr {
+  text-align: center;
+  margin: 2rem;
+  margin-top: 3rem;
+  width: 85%;
+  padding: 2rem 5rem;
+
+  flex: 0 0 calc(100% - 100px);
+}
+
+.message {
+  margin: auto;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: #757575;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+@media screen and (max-width: 750px) {
+  .mskr {
+    width: 90%;
+    flex: 1 0 90%;
+    padding: 1rem;
+  }
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.profile {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.profile-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: var(--second-font);
+  font-size: 1.1rem;
+}
+
+.profile-desc p {
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 8px;
+}

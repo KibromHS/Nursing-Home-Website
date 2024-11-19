@@ -1,16 +1,20 @@
 import React from "react";
-import { About, Contact, Footer, Main, Navbar, Our } from "../../container";
+import { About, Contact, Main, Our, Testimonial } from "../../container";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
-    <>
-      <Navbar />
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: "100%" }}
+    >
       <Main />
       <About />
       <Our />
+      <Testimonial />
       <Contact />
-      <Footer />
-    </>
+    </motion.div>
   );
 };
 
