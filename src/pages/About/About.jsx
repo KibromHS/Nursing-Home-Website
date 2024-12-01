@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./About.css";
 import { aboutus1, aboutus2, oldPerson } from "../../img";
-import { Testimonial } from "../../container";
+import { FounderMessage, Testimonial } from "../../container";
 
 const About = () => {
   return (
@@ -55,6 +55,7 @@ const About = () => {
           </p>
         </div>
       </div>
+      <FounderMessage />
       <Testimonial />
     </motion.div>
   );

@@ -25,3 +25,6 @@ export { default as illustration2 } from "./illustration2.png";
 export { default as home1 } from "./home1.png";
 export { default as home2 } from "./home2.png";
 export { default as aa } from "./aa.png";
+export { default as founder } from "./founder.png";
+export { default as signature } from "./signature.png";
+export { default as founderFooter } from "./founder_footer.png";

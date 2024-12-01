@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Main, Our, Testimonial } from "../../container";
+import { About, FounderMessage, Main, Our, Testimonial } from "../../container";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -8,6 +8,7 @@ const Home = () => {
       <Main />
       <About />
       <Our />
+      <FounderMessage />
       <Testimonial />
     </motion.div>
   );

@@ -38,7 +38,7 @@ const Navbar = () => {
   const handleCloseMenu = () => {
     document.getElementsByClassName(
       "app__navbar-menu-container"
-    )[0].style.marginRight = "-500px";
+    )[0].style.marginRight = "-600px";
     document.getElementsByClassName(
       "app__navbar-menu-container"
     )[0].style.opacity = 0;

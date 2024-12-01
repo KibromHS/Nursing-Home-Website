@@ -103,7 +103,17 @@
   margin-left: 3rem;
 }
 
-@media screen and (max-width: 750px) {
+.second-service .right,
+.third-service .left {
+  width: 60%;
+}
+
+.second-service .right img,
+.third-service .left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
   .first-service h2 {
     font-size: 1.2rem;
     text-align: center;
@@ -123,6 +133,11 @@
     flex-direction: column;
   }
 
+  .second-service .right,
+  .third-service .left {
+    width: auto;
+  }
+
   .second-service img {
     width: 100%;
   }
@@ -137,5 +152,17 @@
 
   .third-service .right {
     padding: 1rem;
+  }
+}
+
+@media (min-width: 1550px) {
+  .second-service .right,
+  .third-service .left {
+    width: auto;
+  }
+
+  .second-service .right img,
+  .third-service .left img {
+    width: auto;
   }
 }

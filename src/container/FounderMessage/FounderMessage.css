@@ -1,0 +1,99 @@
+.founder-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.founder-title h1 {
+  font-family: var(--second-font);
+  margin: 2.5rem 4rem 1rem 0;
+  font-weight: 400;
+}
+
+.founder-title hr {
+  width: 60%;
+  border-radius: 5px;
+  color: var(--secondary-green);
+}
+
+.founder-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.founder-main .line {
+  height: 45vh;
+  width: 2px;
+  background-color: var(--secondary-green);
+  margin-right: 2rem;
+  margin-top: 2rem;
+  border-radius: 6px;
+}
+
+.founder-message {
+  /* flex: 2; */
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.founder-message img:first-child {
+  width: 60px;
+  height: 60px;
+  align-self: flex-start;
+}
+
+.founder-message p {
+  font-family: var(--second-font);
+  font-style: italic;
+  text-align: center;
+  font-size: 17px;
+}
+
+.founder-message .signature {
+  align-self: self-end;
+}
+
+.founder-footer {
+  width: 100%;
+  height: 200px;
+  background-image: url(../../img/founder_footer.png);
+}
+
+.founder-main .founder {
+  width: 30%;
+  height: 100%;
+}
+
+@media (max-width: 750px) {
+  .founder-title h1 {
+    font-size: 1.5rem;
+    margin: 2rem auto 1rem;
+  }
+  .founder-title hr {
+    width: 70%;
+  }
+  .founder-main {
+    flex-direction: column-reverse;
+  }
+  .founder-main .line {
+    display: none;
+  }
+  .founder-message {
+    width: 90%;
+    margin: 2rem 0;
+  }
+  .founder-message p {
+    margin-bottom: 1rem;
+  }
+  .founder-main .founder {
+    width: 100%;
+  }
+  .founder-footer {
+    height: 100px;
+  }
+}
