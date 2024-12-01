@@ -45,6 +45,7 @@ const Contact = () => {
         console.log(data.message || "Error without message");
       }
     } catch (e) {
+      toast.error("Sorry! couldn't send email");
       console.error("error", e);
     }
   };

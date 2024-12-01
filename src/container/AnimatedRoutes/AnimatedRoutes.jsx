@@ -1,6 +1,13 @@
 import React from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import { PageNotFound, Home, About, Service } from "../../pages";
+import {
+  PageNotFound,
+  Home,
+  About,
+  Service,
+  Gallery,
+  Certificates,
+} from "../../pages";
 import { AnimatePresence } from "framer-motion";
 
 const AnimatedRoutes = () => {
@@ -12,6 +19,8 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/our-services" element={<Service />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/certificates" element={<Certificates />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </AnimatePresence>

@@ -1,5 +1,5 @@
 import React from "react";
-import { About, Contact, Main, Our, Testimonial } from "../../container";
+import { About, Main, Our, Testimonial } from "../../container";
 import { motion } from "framer-motion";
 
 const Home = () => {

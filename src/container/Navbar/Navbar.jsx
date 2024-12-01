@@ -63,6 +63,14 @@ const Navbar = () => {
           <Link to="/our-services">Services</Link>
           <div />
         </li>
+        <li className="app__flex p-text">
+          <Link to="/gallery">Gallery</Link>
+          <div />
+        </li>
+        <li className="app__flex p-text">
+          <Link to="/certificates">Certificate</Link>
+          <div />
+        </li>
         <li className="contact-link app__flex p-text">
           <a href="#contact">Contact Us</a>
           <FaPhone className="phone-icon" />
@@ -88,6 +96,16 @@ const Navbar = () => {
             <li>
               <Link to="/our-services" onClick={handleCloseMenu}>
                 Services
+              </Link>
+            </li>
+            <li>
+              <Link to="/gallery" onClick={handleCloseMenu}>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/certificates" onClick={handleCloseMenu}>
+                Certificate
               </Link>
             </li>
             <li className="contact-link">

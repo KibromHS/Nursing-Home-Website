@@ -22,3 +22,6 @@ export { default as aboutus1 } from "./aboutus1.png";
 export { default as aboutus2 } from "./aboutus2.png";
 export { default as illustration1 } from "./illustration1.png";
 export { default as illustration2 } from "./illustration2.png";
+export { default as home1 } from "./home1.png";
+export { default as home2 } from "./home2.png";
+export { default as aa } from "./aa.png";
