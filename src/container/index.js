@@ -7,3 +7,4 @@ export { default as Contact } from "./Contact/Contact";
 export { default as Footer } from "./Footer/Footer";
 export { default as AnimatedRoutes } from "./AnimatedRoutes/AnimatedRoutes";
 export { default as FounderMessage } from "./FounderMessage/FounderMessage";
+export { default as Gallery } from "./Gallery/Gallery";

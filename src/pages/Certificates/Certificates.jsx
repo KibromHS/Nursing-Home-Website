@@ -1,48 +1,107 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Certificates.css";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import {
+  cert1,
+  cert2,
+  cert3,
+  cert4,
+  cert5,
+  cert6,
+  cert7,
+  cert8,
+} from "../../img";
 
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { HiX } from "react-icons/hi";
 
 const Certificates = () => {
+  const [model, setModel] = useState(false);
+  const [tempImgSrc, setTempImgSrc] = useState("");
+
+  const getImg = (src) => {
+    setTempImgSrc(src);
+    setModel(true);
+  };
+
   return (
-    <motion.div initial={{ width: 0 }} animate={{ width: "100%" }}>
-      <h1>Certificates</h1>
+    <motion.div
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      className="certificates"
+    >
+      <div className={model ? "model open" : "model"}>
+        <img src={tempImgSrc} alt="" />
+        <HiX onClick={() => setModel(false)} />
+      </div>
+
+      <h1 className="heading">
+        <span>Cert</span>ificates
+      </h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
+        slidesPerView={2}
         coverflowEffect={{
-          rotate: 0,
-          stretch: 0,
+          rotate: 10,
+          stretch: 20,
           depth: 100,
-          modifier: 2.5,
+          modifier: 3,
+          slideShadows: false,
         }}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={{
-          nextEl: ".swiper-next",
-          prevEl: ".swiper-prev",
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
+        className="swiper-container"
       >
-        <SwiperSlide>
-          <img src="" alt="" />
+        <SwiperSlide className="swiper-slide">
+          <img src={cert1} alt="" onClick={() => getImg(cert1)} />
         </SwiperSlide>
 
-        <div className="slider-controller">
-          <div className="swiper-prev">
+        <SwiperSlide className="swiper-slide">
+          <img src={cert2} alt="" onClick={() => getImg(cert2)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert3} alt="" onClick={() => getImg(cert3)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert4} alt="" onClick={() => getImg(cert4)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert5} alt="" onClick={() => getImg(cert5)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert6} alt="" onClick={() => getImg(cert6)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert7} alt="" onClick={() => getImg(cert7)} />
+        </SwiperSlide>
+
+        <SwiperSlide className="swiper-slide">
+          <img src={cert8} alt="" onClick={() => getImg(cert8)} />
+        </SwiperSlide>
+
+        <div className="slider-controller slider-arrow">
+          <div className="swiper-button-prev">
             <FaChevronLeft />
           </div>
-          <div className="swiper-next">
+          <div className="swiper-button-next slider-arrow">
             <FaChevronRight />
           </div>
 

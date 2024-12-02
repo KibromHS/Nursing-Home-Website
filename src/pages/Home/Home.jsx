@@ -1,5 +1,12 @@
 import React from "react";
-import { About, FounderMessage, Main, Our, Testimonial } from "../../container";
+import {
+  About,
+  FounderMessage,
+  Gallery,
+  Main,
+  Our,
+  Testimonial,
+} from "../../container";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -9,6 +16,7 @@ const Home = () => {
       <About />
       <Our />
       <FounderMessage />
+      <Gallery />
       <Testimonial />
     </motion.div>
   );

@@ -9,33 +9,35 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
+  const [sending, setSending] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+    setSending(true);
     try {
-      const response = await fetch(
-        "https://saintgabrielnursinghome.com/send-email",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ name, email, subject, message }),
-        }
-      );
+      // const response = await fetch(
+      //   "https://saintgabrielnursinghome.com/send-email",
+      //   {
+      //     method: "POST",
+      //     headers: {
+      //       "Content-Type": "application/json",
+      //     },
+      //     body: JSON.stringify({ name, email, subject, message }),
+      //   }
+      // );
 
-      // const response = await fetch("http://localhost:5000/send-email", {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({ name, email, subject, message }),
-      // });
+      const response = await fetch("http://localhost:5000/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
 
       const text = await response.text();
       const data = text ? JSON.parse(text) : {};
       if (response.ok) {
-        toast("Email sent successfully");
+        toast.success("Email sent successfully");
         setName("");
         setEmail("");
         setSubject("");
@@ -47,6 +49,8 @@ const Contact = () => {
     } catch (e) {
       toast.error("Sorry! couldn't send email");
       console.error("error", e);
+    } finally {
+      setSending(false);
     }
   };
 
@@ -122,7 +126,11 @@ const Contact = () => {
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
           </div>
-          <input type="submit" value="Send" />
+          {sending ? (
+            <input type="submit" value="Sending..." disabled />
+          ) : (
+            <input type="submit" value="Send" />
+          )}
         </form>
       </div>
     </div>
