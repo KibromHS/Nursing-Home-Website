@@ -50,7 +50,7 @@ const Certificates = () => {
         centeredSlides={true}
         slidesPerView={2}
         coverflowEffect={{
-          rotate: 10,
+          rotate: 0,
           stretch: 20,
           depth: 100,
           modifier: 3,

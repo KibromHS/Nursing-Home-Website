@@ -34,7 +34,7 @@ const Gallery = () => {
     <motion.div
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
-      className="gallery"
+      className="gallery-section"
     >
       <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc} alt="" />
