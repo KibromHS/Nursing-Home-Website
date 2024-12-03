@@ -82,11 +82,11 @@ const Gallery = () => {
         </SwiperSlide>
 
         <div className="slider-controller">
-          <div className="swiper-button-prev slider-arrow">
-            <FaChevronLeft />
+          <div className="swiper-button-prev gallery-slider-arrow">
+            {/* <FaChevronLeft /> */}
           </div>
-          <div className="swiper-button-next slider-arrow">
-            <FaChevronRight />
+          <div className="swiper-button-next gallery-slider-arrow">
+            {/* <FaChevronRight /> */}
           </div>
 
           <div className="swiper-pagination"></div>

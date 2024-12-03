@@ -20,7 +20,7 @@ const Main = () => {
           <a href="#about" className="more-link">
             More About Us
           </a>
-          <img src={dashed} alt="" />
+          {/* <img src={dashed} alt="" /> */}
         </div>
         <div className="right-side">
           <img src={nurses} alt="Nurses" />

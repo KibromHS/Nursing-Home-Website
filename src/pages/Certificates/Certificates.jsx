@@ -24,10 +24,14 @@ import { HiX } from "react-icons/hi";
 const Certificates = () => {
   const [model, setModel] = useState(false);
   const [tempImgSrc, setTempImgSrc] = useState("");
+  const [deg, setDeg] = useState("");
 
   const getImg = (src) => {
     setTempImgSrc(src);
     setModel(true);
+    if (src == cert6 || src == cert7) setDeg("rotate(-180deg)");
+    else if (src == cert8) setDeg("rotate(90deg)");
+    else setDeg("rotate(-90deg)");
   };
 
   return (
@@ -37,7 +41,7 @@ const Certificates = () => {
       className="certificates"
     >
       <div className={model ? "model open" : "model"}>
-        <img src={tempImgSrc} alt="" />
+        <img src={tempImgSrc} alt="" style={{ transform: deg }} />
         <HiX onClick={() => setModel(false)} />
       </div>
 
@@ -97,12 +101,12 @@ const Certificates = () => {
           <img src={cert8} alt="" onClick={() => getImg(cert8)} />
         </SwiperSlide>
 
-        <div className="slider-controller slider-arrow">
-          <div className="swiper-button-prev">
-            <FaChevronLeft />
+        <div className="slider-controller">
+          <div className="swiper-button-prev slider-arrow">
+            {/* <FaChevronLeft /> */}
           </div>
           <div className="swiper-button-next slider-arrow">
-            <FaChevronRight />
+            {/* <FaChevronRight /> */}
           </div>
 
           <div className="swiper-pagination"></div>
