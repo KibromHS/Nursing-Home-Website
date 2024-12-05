@@ -85,6 +85,8 @@
 
 .about-second-page img {
   width: 40%;
+  height: 500px;
+  object-fit: cover;
 }
 
 .about-second-page div {
@@ -107,5 +109,11 @@
 
   .about-second-page div {
     width: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  .about-second-page img {
+    height: 350px;
   }
 }

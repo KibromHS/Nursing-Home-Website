@@ -3,6 +3,10 @@ import "./Gallery.css";
 import {
   aboutus1,
   aboutus2,
+  gallery1,
+  gallery2,
+  gallery3,
+  gallery4,
   oldPerson,
   testimonial1,
   testimonial2,
@@ -25,6 +29,10 @@ const Gallery = () => {
     { id: 5, imgSrc: testimonial3 },
     { id: 6, imgSrc: testimonial4 },
     { id: 7, imgSrc: aboutus2 },
+    { id: 8, imgSrc: gallery1 },
+    { id: 9, imgSrc: gallery2 },
+    { id: 10, imgSrc: gallery3 },
+    { id: 11, imgSrc: gallery4 },
   ];
 
   const getImg = (src) => {

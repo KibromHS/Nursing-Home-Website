@@ -37,7 +37,7 @@ const About = () => {
       </div>
 
       <div className="about-second-page">
-        <img src={oldPerson} alt="" />
+        <img src={oldPerson} alt="" className="old-img" />
         <div>
           <p>
             <h3>Our Approach</h3>
