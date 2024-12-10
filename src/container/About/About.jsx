@@ -3,12 +3,17 @@ import { care, certified, guarantee, oldPerson, aboutBg } from "../../img";
 import "./About.css";
 import { HiChevronRight } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div id="about">
       <div className="cards-container">
-        <div className="card">
+        <motion.div
+          className="card"
+          whileInView={{ x: [-100, 0] }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="title-img">
             <img src={care} alt="" />
           </div>
@@ -18,8 +23,12 @@ const About = () => {
             staff tailors care plans to meet specific needs and preferences,
             ensuring a comfortable and fulfilling experience.
           </p>
-        </div>
-        <div className="card">
+        </motion.div>
+        <motion.div
+          className="card"
+          whileInView={{ y: [100, 0] }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="title-img white-bg">
             <img src={certified} alt="" />
           </div>
@@ -29,8 +38,12 @@ const About = () => {
             certifications in their respective fields. This ensures that our
             residents receive the highest quality of care and support.
           </p>
-        </div>
-        <div className="card">
+        </motion.div>
+        <motion.div
+          className="card"
+          whileInView={{ x: [100, 0] }}
+          transition={{ duration: 0.5 }}
+        >
           <div className="title-img">
             <img src={guarantee} alt="" />
           </div>
@@ -40,15 +53,23 @@ const About = () => {
             satisfied with our care, we will work diligently to address your
             concerns and ensure a positive experience.
           </p>
-        </div>
+        </motion.div>
       </div>
 
       <div className="second-about">
-        <div className="about-left">
+        <motion.div
+          className="about-left"
+          whileInView={{ x: [-100, 0] }}
+          transition={{ duration: 0.5 }}
+        >
           <img src={aboutBg} alt="bg" className="bg" />
           <img src={oldPerson} alt="care" className="old-image" />
-        </div>
-        <div className="about-right">
+        </motion.div>
+        <motion.div
+          className="about-right"
+          whileInView={{ x: [100, 0] }}
+          transition={{ duration: 0.5 }}
+        >
           <h3>We Take Great Care</h3>
           <p>
             At Saint Gabriel Adult Family Home, we provide exceptional care in a
@@ -73,7 +94,7 @@ const About = () => {
           <Link to="/about" className="more-link">
             About Us
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

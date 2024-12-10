@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import "./Testimonial.css";
+import { motion } from "framer-motion";
 
 import {
   profile1,
@@ -31,6 +32,12 @@ const Testimonial = () => {
       name: "Maria Othman",
       profession: "Customer",
     },
+    {
+      message:
+        "They took care of my father in his last few weeks of life. They made his last few days as comfortable as they could. They are the best hands down! They treated him with respect and kindness every minute.  They are the best care givers I have ever had the pleasure of knowing.",
+      name: "Barry Phares",
+      profession: "Local Guide",
+    },
   ];
 
   const itemStyle = {
@@ -56,7 +63,11 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonial">
+    <motion.div
+      className="testimonial"
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="testimonial-imgs">
         <img src={testimonial1} alt="old-person" />
         <img src={testimonial2} alt="old-person" />
@@ -95,7 +106,7 @@ const Testimonial = () => {
           <FaChevronRight onClick={scrollRight} />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

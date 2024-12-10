@@ -1,10 +1,15 @@
 import React from "react";
 import "./FounderMessage.css";
 import { founder, founderFooter, quote, signature } from "../../img";
+import { motion } from "framer-motion";
 
 const FounderMessage = () => {
   return (
-    <div className="founder">
+    <motion.div
+      className="founder"
+      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="founder-title">
         <h1>Message From Founder</h1>
         <hr />
@@ -29,7 +34,7 @@ const FounderMessage = () => {
         <div className="line"></div>
       </div>
       <div className="founder-footer"></div>
-    </div>
+    </motion.div>
   );
 };
 

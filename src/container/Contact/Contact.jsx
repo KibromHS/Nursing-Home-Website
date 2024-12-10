@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import { FaMailBulk, FaPhone } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import "./Contact.css";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -56,7 +57,11 @@ const Contact = () => {
 
   return (
     <div className="contact" id="contact">
-      <div className="left-side">
+      <motion.div
+        className="left-side"
+        whileInView={{ x: [-100, 0] }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Contact Us</h1>
         <div />
         <ul>
@@ -88,8 +93,12 @@ const Contact = () => {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
-      <div className="right-side">
+      </motion.div>
+      <motion.div
+        className="right-side"
+        whileInView={{ x: [100, 0] }}
+        transition={{ duration: 0.5 }}
+      >
         <h3>Leave us a message and we will get back</h3>
         <form onSubmit={handleFormSubmit}>
           <div className="name-email">
@@ -132,7 +141,7 @@ const Contact = () => {
             <input type="submit" value="Send" />
           )}
         </form>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -3,6 +3,7 @@ import "./Our.css";
 import { FaRegCheckSquare } from "react-icons/fa";
 import { FaMapLocationDot, FaRegCircle } from "react-icons/fa6";
 import { home1, home2, aa } from "../../img";
+import { motion } from "framer-motion";
 
 const Our = () => {
   return (
@@ -19,7 +20,11 @@ const Our = () => {
           <div />
         </div>
       </div>
-      <div className="cities">
+      <motion.div
+        className="cities"
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="tab-content active" id="seattle">
           <h1>Saint Gabriel Seattle</h1>
           <div className="first_home">
@@ -82,7 +87,7 @@ const Our = () => {
             <div className="aa-bg"></div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
