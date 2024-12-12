@@ -35,6 +35,8 @@ const Gallery = () => {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       className="gallery-section"
+      whileInView={{ x: [300, 0] }}
+      transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className={model ? "model open" : "model"}>
         <img src={tempImgSrc} alt="" />

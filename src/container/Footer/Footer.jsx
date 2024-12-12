@@ -59,16 +59,22 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="our-services">
+              <Link to="/our-services">
                 <FaChevronRight />
                 Services
               </Link>
             </li>
             <li>
-              <a href="#contact">
+              <Link to="/gallery">
                 <FaChevronRight />
-                Contact Us
-              </a>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link to="/certificates">
+                <FaChevronRight />
+                Certificate
+              </Link>
             </li>
           </ul>
         </div>
@@ -77,9 +83,15 @@ const Footer = () => {
           <img src={underline} alt="" />
           <ul>
             <li>
-              <a href="tel:+251911000000">
+              <a href="tel:214-603-2783">
                 <FaPhone />
-                +251911000000
+                214-603-2783
+              </a>
+            </li>
+            <li>
+              <a href="tel:+251911212103">
+                <FaPhone />
+                +2519 11 21 21 03
               </a>
             </li>
             <li>
@@ -89,7 +101,17 @@ const Footer = () => {
               </a>
             </li>
             <li>
-              <a href="https://google.com/maps">
+              <a
+                href="https://maps.app.goo.gl/Pz1zPvAGDu9d7357A"
+                target="_blank"
+              >
+                <FaLocationDot />
+                5406 30th Ave S, Seattle, WA 98108
+              </a>
+            </li>
+
+            <li>
+              <a>
                 <FaLocationDot />
                 Addis Ababa, Ethiopia
               </a>

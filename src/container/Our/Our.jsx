@@ -4,6 +4,7 @@ import { FaRegCheckSquare } from "react-icons/fa";
 import { FaMapLocationDot, FaRegCircle } from "react-icons/fa6";
 import { home1, home2, aa } from "../../img";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Our = () => {
   return (
@@ -23,7 +24,7 @@ const Our = () => {
       <motion.div
         className="cities"
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="tab-content active" id="seattle">
           <h1>Saint Gabriel Seattle</h1>
@@ -31,7 +32,12 @@ const Our = () => {
             <div className="left-part">
               <h2>Address 1</h2>
               <p>
-                <FaMapLocationDot /> 5406 30th Ave S, Seattle, WA 98108
+                <Link
+                  to="https://maps.app.goo.gl/Pz1zPvAGDu9d7357A"
+                  target="_blank"
+                >
+                  <FaMapLocationDot /> 5406 30th Ave S, Seattle, WA 98108
+                </Link>
               </p>
               <h2>Features</h2>
               <ul className="features">
@@ -62,7 +68,12 @@ const Our = () => {
             <div className="left-part">
               <h2>Address 2</h2>
               <p>
-                <FaMapLocationDot /> 2433 S 135th Street, Seattle, WA 98168{" "}
+                <Link
+                  to="https://maps.app.goo.gl/qgz6Ek8R8dJaqRFbA"
+                  target="_blank"
+                >
+                  <FaMapLocationDot /> 2433 S 135th Street, Seattle, WA 98168
+                </Link>
               </p>
               <h2>Features</h2>
               <ul className="features">

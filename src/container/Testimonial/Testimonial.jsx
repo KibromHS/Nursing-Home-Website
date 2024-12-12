@@ -66,7 +66,7 @@ const Testimonial = () => {
     <motion.div
       className="testimonial"
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="testimonial-imgs">
         <img src={testimonial1} alt="old-person" />
@@ -79,7 +79,7 @@ const Testimonial = () => {
         <h1>Testimonials</h1>
         <div className="underline" />
 
-        <div
+        <motion.div
           className="container"
           ref={scrollContainer}
           style={{
@@ -90,6 +90,8 @@ const Testimonial = () => {
             scrollSnapType: "x mandatory",
             scrollbarWidth: "none",
           }}
+          whileInView={{ x: [200, 0] }}
+          transition={{ duration: 0.6, delay: 0.2 }}
         >
           {testimonials.map((testimonial, index) => (
             <Mskr
@@ -100,7 +102,7 @@ const Testimonial = () => {
               style={itemStyle}
             />
           ))}
-        </div>
+        </motion.div>
         <div className="buttons">
           <FaChevronLeft onClick={scrollLeft} />
           <FaChevronRight onClick={scrollRight} />

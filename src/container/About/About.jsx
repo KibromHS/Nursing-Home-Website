@@ -12,7 +12,7 @@ const About = () => {
         <motion.div
           className="card"
           whileInView={{ x: [-100, 0] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="title-img">
             <img src={care} alt="" />
@@ -27,7 +27,7 @@ const About = () => {
         <motion.div
           className="card"
           whileInView={{ y: [100, 0] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="title-img white-bg">
             <img src={certified} alt="" />
@@ -42,7 +42,7 @@ const About = () => {
         <motion.div
           className="card"
           whileInView={{ x: [100, 0] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="title-img">
             <img src={guarantee} alt="" />
@@ -60,7 +60,7 @@ const About = () => {
         <motion.div
           className="about-left"
           whileInView={{ x: [-100, 0] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <img src={aboutBg} alt="bg" className="bg" />
           <img src={oldPerson} alt="care" className="old-image" />
@@ -68,7 +68,7 @@ const About = () => {
         <motion.div
           className="about-right"
           whileInView={{ x: [100, 0] }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h3>We Take Great Care</h3>
           <p>

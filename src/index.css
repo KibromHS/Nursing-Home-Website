@@ -21,6 +21,10 @@
   text-rendering: optimizeLegibility;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   overflow-x: hidden;
 }

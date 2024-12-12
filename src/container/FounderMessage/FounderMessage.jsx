@@ -8,7 +8,7 @@ const FounderMessage = () => {
     <motion.div
       className="founder"
       whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.5, delay: 0.2 }}
     >
       <div className="founder-title">
         <h1>Message From Founder</h1>

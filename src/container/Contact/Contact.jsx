@@ -60,7 +60,7 @@ const Contact = () => {
       <motion.div
         className="left-side"
         whileInView={{ x: [-100, 0] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h1>Contact Us</h1>
         <div />
@@ -72,21 +72,35 @@ const Contact = () => {
             </a>
           </li>
           <li>
+            <a href="tel:+251911212103">
+              <FaPhone />
+              +2519 11 21 21 03
+            </a>
+          </li>
+          <li>
             <a href="mailto:info@saintgabrielnursinghome.com">
               <FaMailBulk />
               info@saintgabrielnursinghome.com
             </a>
           </li>
           <li>
-            <a href="https://google.com/maps">
+            <a href="https://maps.app.goo.gl/Pz1zPvAGDu9d7357A" target="_blank">
               <FaLocationDot />
               5406 30th Ave S, Seattle, WA 981082433 S 135th Street, Seattle, WA
               98168
             </a>
           </li>
         </ul>
-        <iframe
+        {/* <iframe
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d26772.692510308934!2d38.78145349289865!3d8.911579824058885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2set!4v1731595542777!5m2!1sen!2set"
+          height="450"
+          style={{ border: "0" }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe> */}
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d816.9398698170012!2d-122.2937988!3d47.5532719!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549041e27218e895%3A0xe622a1c0165f0580!2s5406%2030th%20Ave%20S%2C%20Seattle%2C%20WA%2098108%2C%20USA!5e1!3m2!1sen!2set!4v1734018051960!5m2!1sen!2set"
           height="450"
           style={{ border: "0" }}
           allowFullScreen=""
@@ -97,7 +111,7 @@ const Contact = () => {
       <motion.div
         className="right-side"
         whileInView={{ x: [100, 0] }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <h3>Leave us a message and we will get back</h3>
         <form onSubmit={handleFormSubmit}>

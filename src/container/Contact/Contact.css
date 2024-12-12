@@ -50,6 +50,12 @@
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+  transition: all 0.1s ease;
+}
+
+.contact .left-side ul li a:hover {
+  color: var(--green-nav);
+  transform: scale(1.015);
 }
 
 .contact .left-side ul li a svg {

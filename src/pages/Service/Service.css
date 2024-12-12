@@ -150,6 +150,10 @@
     padding: 1rem;
   }
 
+  .third-service .left {
+    display: none;
+  }
+
   .third-service .right {
     padding: 1rem;
   }
