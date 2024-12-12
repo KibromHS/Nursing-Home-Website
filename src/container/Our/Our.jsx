@@ -1,6 +1,6 @@
 import React from "react";
 import "./Our.css";
-import { FaRegCheckSquare } from "react-icons/fa";
+import { FaMailBulk, FaPhone, FaRegCheckSquare } from "react-icons/fa";
 import { FaMapLocationDot, FaRegCircle } from "react-icons/fa6";
 import { home1, home2, aa } from "../../img";
 import { motion } from "framer-motion";
@@ -93,7 +93,24 @@ const Our = () => {
         <div className="tab-content" id="addis-ababa">
           <div className="aa-image">
             <img src={aa} alt="" />
-            <h1>Golden Hope Adult Family Home</h1>
+            <div className="addis-header">
+              <h1>Golden Hope Adult Family Home</h1>
+              <p>
+                <a href="tel:+251911212103">
+                  <FaPhone /> +2519 11 21 21 03
+                </a>
+              </p>
+              <p>
+                <a href="mailto:goldenhope@saintgabrielnursinghome.com">
+                  <FaMailBulk />
+                  goldenhope@saintgabrielnursinghome.com
+                </a>
+              </p>
+              <p>
+                <FaMapLocationDot /> Addis Ababa, Ethiopia
+              </p>
+            </div>
+
             <p>Coming Soon...</p>
             <div className="aa-bg"></div>
           </div>
