@@ -257,3 +257,19 @@
 .left-part p a:hover {
   transform: translate(10, 10);
 }
+
+@media (max-width: 900px) {
+  .addis-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .aa-image {
+    height: 70vh;
+  }
+
+  .addis-header {
+    padding: 1rem;
+  }
+}
