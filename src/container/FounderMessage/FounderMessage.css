@@ -19,6 +19,7 @@
 
 .founder-main {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
 }
@@ -30,6 +31,7 @@
   margin-right: 2rem;
   margin-top: 2rem;
   border-radius: 6px;
+  align-self: flex-end;
 }
 
 .founder-message {
@@ -54,8 +56,12 @@
   font-size: 17px;
 }
 
-.founder-message .signature {
+.founder-message .name {
   align-self: self-end;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.3rem;
 }
 
 .founder-footer {

@@ -15,7 +15,8 @@ const FounderMessage = () => {
         <hr />
       </div>
       <div className="founder-main">
-        <img src={founder} alt="" className="founder" />
+        {/* <img src={founder} alt="" className="founder" /> */}
+        <div></div>
         <div className="founder-message">
           <img src={quote} alt="" />
           <p>
@@ -29,7 +30,8 @@ const FounderMessage = () => {
             honored to be part of their journey. <br />
             <br /> Warm regards,
           </p>
-          <img src={signature} alt="" className="signature" />
+          {/* <img src={signature} alt="" className="signature" /> */}
+          <p className="name">Yordanos Tesfai</p>
         </div>
         <div className="line"></div>
       </div>
